@@ -1,16 +1,44 @@
-# flutter_practice
+# 🗂️ Flutter GetX Folder Structure Template
 
-A new Flutter project.
+This project provides a **recommended folder architecture** for Flutter apps using **GetX** for state management, navigation, and dependency injection.
 
-## Getting Started
+The structure is modular, scalable, and clean — following best practices for medium to large-scale projects.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+mkdir -p lib/app/modules/home/{bindings,controllers,views,widgets} \
+lib/app/modules/auth/{bindings,controllers,views,widgets} \
+lib/app/data/{models,providers,services,repositories} \
+lib/app/routes \
+lib/app/themes \
+lib/app/utils
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Folder Structure
+
+```text
+lib/
+├── app/
+│   ├── modules/
+│   │   ├── home/
+│   │   │   ├── bindings/
+│   │   │   ├── controllers/
+│   │   │   ├── views/
+│   │   │   └── widgets/
+│   │   ├── auth/
+│   │   │   ├── bindings/
+│   │   │   ├── controllers/
+│   │   │   ├── views/
+│   │   │   └── widgets/
+│   ├── data/
+│   │   ├── models/
+│   │   ├── providers/
+│   │   ├── services/
+│   │   └── repositories/
+│   ├── routes/
+│   ├── themes/
+│   └── utils/
+├── main.dart
+└── generated_plugin_registrant.dart
